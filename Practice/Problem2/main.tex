@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amssymb,amsmath}
+\usepackage{multirow,multicol}
+\usepackage{xcolor} % coloring text
+\title{
+sample online\\
+}
+\author{1234567}
+\date{June 22, 2019 }
+
+\begin{document}
+
+\maketitle
+
+Create a document using LATEX that looks exactly as this document. Use “Cross-Referencing” while referring to any section or subsection or sub...subsection. Section 1 contains no subsectionso. Section 2 has two Subsections. Subsection 2.1 consists of one Sub subsection: 2.1.1 shows some colorful lines. Next Sub-
+section shows a complex table (Table \ref{tab:1}).
+
+\section{List}
+This section contains a sample list. Try to reproduce it.
+\begin{enumerate}
+    \item FIRST ITEM
+    \item second item
+        \begin{itemize}
+            \item nested one
+            \item [] special one
+            \begin{itemize}
+                \item [-] \textit{another level}
+                \item [-] Ok enough
+            \end{itemize}
+        \end{itemize}
+    \item another
+        \begin{enumerate}
+            \item \textbf{what is happening}
+            \item[] I am here 
+            \item[] \textbf{CSE} Computer science and engineering 
+            \item[] \textbf{ME} Mechanical engineering 
+        \end{enumerate}
+\end{enumerate}
+\vspace{3mm}
+Here is some filler texts. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien
+est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices 
+bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci
+sit amet orci dignissim rutrum.
+
+\section{Fonts}
+
+\subsection{Normal Fonts}
+These are some normal texts.
+\subsubsection{Color}
+\color{cyan}Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.\par
+\color{magenta} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum. \par
+\color{black} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+\vspace{2mm}\\
+\raggedright
+\large \textbf{Tables}\\
+\vspace{2mm}
+Table \ref{tab:1} is very tough.
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|} \hline
+         left & 2 & 3 & 4 & 5 \\ \hline
+         \multicolumn{2}{c}{This is} & \multicolumn{3}{c}{Tough} \\ \cline{3-5}
+         \multicolumn{2}{c}{difficult} & I & \multicolumn{2}{c|}{What} \\ \cline{1-3}
+         \multicolumn{3}{|c|}{Here I am} & \multicolumn{2}{l|}{is} \\
+         \hline
+         \multicolumn{3}{c}{} & \multicolumn{2}{l}{this} \\
+    \end{tabular}
+    \caption{Hardest Table!}
+    \label{tab:1}
+\end{table}
+
+\end{document}
