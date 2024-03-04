@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amssymb,amsmath}
+\usepackage{multirow,multicol}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{xcolor} % coloring text
+\title{
+CSE 300 Online 1\\
+}
+\author{1234567}
+\date{June 22, 2019 }
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+This is the first online practice on \LaTeX. \\
+We will do some styling in section 2.
+
+\section{Styling}
+
+This is \textcolor{red}{\textbf{bold}} . This
+is \textcolor{blue}{\textit{italic}} \& so on.
+
+%unnumbered section not in table of contents
+\section*{Use of special characters}
+
+%unnumbered section in table of  contents
+\addcontentsline{toc}{section}{Use of special characters in toc}
+\section*{Use of special characters in toc}
+
+You can use special characters by preceding with \. Another package can be used named as verbatim. Example: \verb=~!$#@*^= %inline verbatim use
+
+\begin{verbatim}
+    Paragraph verbatim usage ~!$#@*^
+\end{verbatim}
+\newpage
+\section{List}
+\begin{enumerate}[label= \roman*]
+    \item Un-ordered 
+    \item Ordered
+    \item Description
+\end{enumerate}
+
+Let’s see an example of lists: 
+\begin{itemize}
+    \item [CSE 311] Data Communication
+    \begin{itemize}
+        \item [.] Fourier
+        \item [] ADC
+    \end{itemize}
+    \item [CSE 305] Computer Architecture
+    \begin{enumerate}
+        \item MIPS
+        \begin{enumerate}[label = (\alph*)] % \alph* is the place holder for numbering
+            \item \textit{commands}
+            \item \textit{pipeline}
+        \end{enumerate}
+    \end{enumerate}
+    \item [CSE 309] Compiler
+\end{itemize}
+
+\section{Table}
+
+For understanding the use of multi-row and multi-column command see the table \ref{tab:1}
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c|c c c|}
+        \hline
+        \multirow{2}{*}{Dollar} & Rupee & \multicolumn{1}{|c}{Taka} & Euro \\ \cline{2-4}
+         & \multicolumn{2}{c}{\multirow{3}{*}{Dhaka}} & \multicolumn{1}{|c|}{DU} \\ \cline{4-4}
+         City & & &  \multicolumn{1}{c|}{BUET} \\ \cline{1-1} \cline{4-4}
+         Food & & & \multicolumn{1}{|c|}{Mosque} \\
+         \hline
+    \end{tabular}
+    \caption{A table for online test}
+    \label{tab:1}
+\end{table}
+
+\Large
+
+\end{document}
