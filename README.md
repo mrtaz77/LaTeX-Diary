@@ -1,5 +1,5 @@
 # LaTeX-Diary
-Welcome to my LaTeX diary !!! An archive of scripts,pdfs and writtings done using LaTeX
+Welcome to my LaTeX diary !!! An archive of assignments and scripts done using LaTeX.
 
 # How to run
 1. Upload the related files in a directory to overleaf.
